@@ -693,18 +693,6 @@ Z = prob_e(X, Y,e_m,sig_e_m).T
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">def</span> <span class="nf">prob_e</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">e_0</span><span class="p">,</span><span class="n">sig_e_0</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
@@ -961,11 +949,7 @@ plt.savefig(&#39;figures/gp_interpolation.svg&#39;, bbox_inches=&#39;tight&#39;)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/conda/lib/python3.10/site-packages/sklearn/gaussian_process/kernels.py:420: ConvergenceWarning: The optimal value found for dimension 0 of parameter length_scale is close to the specified lower bound 0.35. Decreasing the bound and calling fit again may find a better value.
-  warnings.warn(
-</pre></div>
-</div>
-<img alt="_images/Baryons_2022_notes_20_1.png" src="_images/Baryons_2022_notes_20_1.png" />
+<img alt="_images/Baryons_2022_notes_20_0.png" src="_images/Baryons_2022_notes_20_0.png" />
 </div>
 </div>
 </section>
@@ -1066,18 +1050,18 @@ plt.show()
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Last updated: 2022-12-29T17:23:26.982380+00:00
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Last updated: 2022-12-30T12:17:49.880839+00:00
 
 Python implementation: CPython
-Python version       : 3.10.8
+Python version       : 3.8.15
 IPython version      : 8.7.0
 
-Compiler    : GCC 10.4.0
+Compiler    : GCC 11.3.0
 OS          : Linux
-Release     : 4.19.128-microsoft-standard
+Release     : 5.15.0-1024-azure
 Machine     : x86_64
 Processor   : x86_64
-CPU cores   : 8
+CPU cores   : 2
 Architecture: 64bit
 </pre></div>
 </div>
@@ -1085,10 +1069,10 @@ Architecture: 64bit
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pandas    : 1.5.2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy     : 1.24.1
+pandas    : 1.5.2
 matplotlib: 3.6.2
 seaborn   : 0.12.1
-numpy     : 1.23.5
 sklearn   : 1.2.0
 </pre></div>
 </div>
