@@ -2,4 +2,6 @@ jupyter-book
 matplotlib
 seaborn
 numpy
+scipy
+scikit_learn
 ghp-import
