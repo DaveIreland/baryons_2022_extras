@@ -96,46 +96,6 @@ make_spectrum_plot(df1=nstar_1996_df,df2=nstar_2022_df,title=r'N$^{\ast}$ Resona
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/site-packages/matplotlib/texmanager.py:253[0m, in [0;36mTexManager._run_checked_subprocess[0;34m(cls, command, tex, cwd)[0m
-[1;32m    252[0m [38;5;28;01mtry[39;00m:
-[0;32m--> 253[0m     report [38;5;241m=[39m [43msubprocess[49m[38;5;241;43m.[39;49m[43mcheck_output[49m[43m([49m
-[1;32m    254[0m [43m        [49m[43mcommand[49m[43m,[49m[43m [49m[43mcwd[49m[38;5;241;43m=[39;49m[43mcwd[49m[43m [49m[38;5;28;43;01mif[39;49;00m[43m [49m[43mcwd[49m[43m [49m[38;5;129;43;01mis[39;49;00m[43m [49m[38;5;129;43;01mnot[39;49;00m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m [49m[38;5;28;43;01melse[39;49;00m[43m [49m[38;5;28;43mcls[39;49m[38;5;241;43m.[39;49m[43mtexcache[49m[43m,[49m
-[1;32m    255[0m [43m        [49m[43mstderr[49m[38;5;241;43m=[39;49m[43msubprocess[49m[38;5;241;43m.[39;49m[43mSTDOUT[49m[43m)[49m
-[1;32m    256[0m [38;5;28;01mexcept[39;00m [38;5;167;01mFileNotFoundError[39;00m [38;5;28;01mas[39;00m exc:
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/subprocess.py:415[0m, in [0;36mcheck_output[0;34m(timeout, *popenargs, **kwargs)[0m
-[1;32m    413[0m     kwargs[[38;5;124m'[39m[38;5;124minput[39m[38;5;124m'[39m] [38;5;241m=[39m empty
-[0;32m--> 415[0m [38;5;28;01mreturn[39;00m [43mrun[49m[43m([49m[38;5;241;43m*[39;49m[43mpopenargs[49m[43m,[49m[43m [49m[43mstdout[49m[38;5;241;43m=[39;49m[43mPIPE[49m[43m,[49m[43m [49m[43mtimeout[49m[38;5;241;43m=[39;49m[43mtimeout[49m[43m,[49m[43m [49m[43mcheck[49m[38;5;241;43m=[39;49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
-[1;32m    416[0m [43m           [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m[38;5;241m.[39mstdout
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/subprocess.py:493[0m, in [0;36mrun[0;34m(input, capture_output, timeout, check, *popenargs, **kwargs)[0m
-[1;32m    491[0m     kwargs[[38;5;124m'[39m[38;5;124mstderr[39m[38;5;124m'[39m] [38;5;241m=[39m PIPE
-[0;32m--> 493[0m [38;5;28;01mwith[39;00m [43mPopen[49m[43m([49m[38;5;241;43m*[39;49m[43mpopenargs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m [38;5;28;01mas[39;00m process:
-[1;32m    494[0m     [38;5;28;01mtry[39;00m:
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/subprocess.py:858[0m, in [0;36mPopen.__init__[0;34m(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)[0m
-[1;32m    855[0m             [38;5;28mself[39m[38;5;241m.[39mstderr [38;5;241m=[39m io[38;5;241m.[39mTextIOWrapper([38;5;28mself[39m[38;5;241m.[39mstderr,
-[1;32m    856[0m                     encoding[38;5;241m=[39mencoding, errors[38;5;241m=[39merrors)
-[0;32m--> 858[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_execute_child[49m[43m([49m[43margs[49m[43m,[49m[43m [49m[43mexecutable[49m[43m,[49m[43m [49m[43mpreexec_fn[49m[43m,[49m[43m [49m[43mclose_fds[49m[43m,[49m
-[1;32m    859[0m [43m                        [49m[43mpass_fds[49m[43m,[49m[43m [49m[43mcwd[49m[43m,[49m[43m [49m[43menv[49m[43m,[49m
-[1;32m    860[0m [43m                        [49m[43mstartupinfo[49m[43m,[49m[43m [49m[43mcreationflags[49m[43m,[49m[43m [49m[43mshell[49m[43m,[49m
-[1;32m    861[0m [43m                        [49m[43mp2cread[49m[43m,[49m[43m [49m[43mp2cwrite[49m[43m,[49m
-[1;32m    862[0m [43m                        [49m[43mc2pread[49m[43m,[49m[43m [49m[43mc2pwrite[49m[43m,[49m
-[1;32m    863[0m [43m                        [49m[43merrread[49m[43m,[49m[43m [49m[43merrwrite[49m[43m,[49m
-[1;32m    864[0m [43m                        [49m[43mrestore_signals[49m[43m,[49m[43m [49m[43mstart_new_session[49m[43m)[49m
-[1;32m    865[0m [38;5;28;01mexcept[39;00m:
-[1;32m    866[0m     [38;5;66;03m# Cleanup if the child failed starting.[39;00m
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/subprocess.py:1704[0m, in [0;36mPopen._execute_child[0;34m(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)[0m
-[1;32m   1703[0m         err_msg [38;5;241m=[39m os[38;5;241m.[39mstrerror(errno_num)
-[0;32m-> 1704[0m     [38;5;28;01mraise[39;00m child_exception_type(errno_num, err_msg, err_filename)
-[1;32m   1705[0m [38;5;28;01mraise[39;00m child_exception_type(err_msg)
-
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'latex'
-
-The above exception was the direct cause of the following exception:
-
 [0;31mRuntimeError[0m                              Traceback (most recent call last)
 File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/site-packages/IPython/core/formatters.py:338[0m, in [0;36mBaseFormatter.__call__[0;34m(self, obj)[0m
 [1;32m    336[0m     [38;5;28;01mpass[39;00m
@@ -312,22 +272,87 @@ File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/site-packages/m
 [1;32m    298[0m         (Path(tmpdir) [38;5;241m/[39m Path(dvifile)[38;5;241m.[39mname)[38;5;241m.[39mreplace(dvifile)
 [1;32m    299[0m [38;5;28;01mreturn[39;00m dvifile
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/site-packages/matplotlib/texmanager.py:257[0m, in [0;36mTexManager._run_checked_subprocess[0;34m(cls, command, tex, cwd)[0m
-[1;32m    253[0m     report [38;5;241m=[39m subprocess[38;5;241m.[39mcheck_output(
-[1;32m    254[0m         command, cwd[38;5;241m=[39mcwd [38;5;28;01mif[39;00m cwd [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m [38;5;28;01melse[39;00m [38;5;28mcls[39m[38;5;241m.[39mtexcache,
-[1;32m    255[0m         stderr[38;5;241m=[39msubprocess[38;5;241m.[39mSTDOUT)
-[1;32m    256[0m [38;5;28;01mexcept[39;00m [38;5;167;01mFileNotFoundError[39;00m [38;5;28;01mas[39;00m exc:
-[0;32m--> 257[0m     [38;5;28;01mraise[39;00m [38;5;167;01mRuntimeError[39;00m(
+File [0;32m/opt/hostedtoolcache/Python/3.8.15/x64/lib/python3.8/site-packages/matplotlib/texmanager.py:261[0m, in [0;36mTexManager._run_checked_subprocess[0;34m(cls, command, tex, cwd)[0m
+[1;32m    257[0m     [38;5;28;01mraise[39;00m [38;5;167;01mRuntimeError[39;00m(
 [1;32m    258[0m         [38;5;124m'[39m[38;5;124mFailed to process string with tex because [39m[38;5;132;01m{}[39;00m[38;5;124m could not be [39m[38;5;124m'[39m
 [1;32m    259[0m         [38;5;124m'[39m[38;5;124mfound[39m[38;5;124m'[39m[38;5;241m.[39mformat(command[[38;5;241m0[39m])) [38;5;28;01mfrom[39;00m [38;5;21;01mexc[39;00m
 [1;32m    260[0m [38;5;28;01mexcept[39;00m subprocess[38;5;241m.[39mCalledProcessError [38;5;28;01mas[39;00m exc:
-[1;32m    261[0m     [38;5;28;01mraise[39;00m [38;5;167;01mRuntimeError[39;00m(
+[0;32m--> 261[0m     [38;5;28;01mraise[39;00m [38;5;167;01mRuntimeError[39;00m(
 [1;32m    262[0m         [38;5;124m'[39m[38;5;132;01m{prog}[39;00m[38;5;124m was not able to process the following string:[39m[38;5;130;01m\n[39;00m[38;5;124m'[39m
 [1;32m    263[0m         [38;5;124m'[39m[38;5;132;01m{tex!r}[39;00m[38;5;130;01m\n[39;00m[38;5;130;01m\n[39;00m[38;5;124m'[39m
-[0;32m   (...)[0m
+[1;32m    264[0m         [38;5;124m'[39m[38;5;124mHere is the full command invocation and its output:[39m[38;5;130;01m\n[39;00m[38;5;130;01m\n[39;00m[38;5;124m'[39m
+[1;32m    265[0m         [38;5;124m'[39m[38;5;132;01m{format_command}[39;00m[38;5;130;01m\n[39;00m[38;5;130;01m\n[39;00m[38;5;124m'[39m
+[1;32m    266[0m         [38;5;124m'[39m[38;5;132;01m{exc}[39;00m[38;5;130;01m\n[39;00m[38;5;130;01m\n[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(
+[1;32m    267[0m             prog[38;5;241m=[39mcommand[[38;5;241m0[39m],
+[1;32m    268[0m             format_command[38;5;241m=[39mcbook[38;5;241m.[39m_pformat_subprocess(command),
+[1;32m    269[0m             tex[38;5;241m=[39mtex[38;5;241m.[39mencode([38;5;124m'[39m[38;5;124municode_escape[39m[38;5;124m'[39m),
 [1;32m    270[0m             exc[38;5;241m=[39mexc[38;5;241m.[39moutput[38;5;241m.[39mdecode([38;5;124m'[39m[38;5;124mutf-8[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mbackslashreplace[39m[38;5;124m'[39m))
 [1;32m    271[0m         ) [38;5;28;01mfrom[39;00m [38;5;28mNone[39m
+[1;32m    272[0m _log[38;5;241m.[39mdebug(report)
+[1;32m    273[0m [38;5;28;01mreturn[39;00m report
 
-[0;31mRuntimeError[0m: Failed to process string with tex because latex could not be found
-RuntimeError: Failed to process string with tex because latex could not be found
+[0;31mRuntimeError[0m: latex was not able to process the following string:
+b'lp'
+
+Here is the full command invocation and its output:
+
+latex -interaction=nonstopmode --halt-on-error ../b1f6e526c8f59347b3e60c011cbf0b53.tex
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(../b1f6e526c8f59347b3e60c011cbf0b53.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-11-02> (/home/runner/.TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/size10.clo))
+
+! LaTeX Error: File `type1cm.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {type1ec}^^M
+No pages of output.
+Transcript written on b1f6e526c8f59347b3e60c011cbf0b53.log.
+
+
+
+RuntimeError: latex was not able to process the following string:
+b'lp'
+
+Here is the full command invocation and its output:
+
+latex -interaction=nonstopmode --halt-on-error ../b1f6e526c8f59347b3e60c011cbf0b53.tex
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(../b1f6e526c8f59347b3e60c011cbf0b53.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-11-02> (/home/runner/.TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/size10.clo))
+
+! LaTeX Error: File `type1cm.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {type1ec}^^M
+No pages of output.
+Transcript written on b1f6e526c8f59347b3e60c011cbf0b53.log.
+
+
+
 
