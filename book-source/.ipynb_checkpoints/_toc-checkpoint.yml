@@ -5,3 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: Baryons_2022_notes
+- file: Pseudodata_again
