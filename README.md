@@ -1,4 +1,4 @@
-# Notes_and_Extras
+# Notes and Extras
 
 Jupyter Book containing notebooks used to produce additional material for conferences, research notes and occasional notes on miscellaneous topics.
 
@@ -6,7 +6,7 @@ Jupyter Book containing notebooks used to produce additional material for confer
 
 ### Building the book
 
-If you'd like to develop and/or build the Notes_and_Extras book, you should:
+If you'd like to develop and/or build the Notes and Extras book, you should:
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
