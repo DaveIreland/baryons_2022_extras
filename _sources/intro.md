@@ -5,7 +5,9 @@ This is a Jupyter Book intended to contain notebooks that have been created for
 * research ideas
 * occasional miscellaneous notes
   
-It is based on the 
+It is based on the template given in the [Jupyter Book tutorial](https://jupyterbook.org/en/stable/start/your-first-book.html)
+
+Contents:
 
 ```{tableofcontents}
 ```
